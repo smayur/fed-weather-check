@@ -800,7 +800,7 @@ footer .wrapper { padding: 47px 0px 62px; }
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap; 
   }
-  
+
 }
 
 @media screen and (max-width: 768px) {
@@ -905,6 +905,150 @@ footer .wrapper { padding: 47px 0px 62px; }
   .footer-icons .icon:first-child { margin-left: 0; }
 
 }
+
+@media screen and (max-width: 540px) {
+
+  /* home page main starts here
+  ========================================================================== */
+
+  .home-main .banner { padding: 60px 0 210px; }
+  .form-inputs { padding: 4px; }
+
+  .input-field {
+    padding: 13px 12px;
+    font-size: 12px;
+  }
+
+  .btn { font-size: 11px; }
+  .find { padding: 0 32px; }
+
+  /*----- Weather report starts here -----*/
+
+  .weather-report { 
+    width: 92%; 
+    top: 53%;
+  }
+
+  .report-header { padding: 8px; }
+
+  .report-header span { 
+    font-size: 12px;
+    font-weight: 500; 
+  }
+
+  .report-details { padding: 30px 20px 28px 18px; }
+  
+  .report-city { 
+    margin-bottom: 13px;
+    font-size: 15px;
+    font-weight: 400; 
+  }
+  
+  .temprature-details { margin-bottom: 6px; }
+
+  .temrature {
+    margin-right: 30px;
+    font-size: 72px;
+    font-weight: 600;
+  }
+  
+  .temparture-icon figure,
+  .temparture-icon figure img {
+    width: 75px;
+    margin-top: 5px;
+  }
+
+  .other-weather-details > li { margin-right: 18px; }
+  .other-weather-details > li:nth-child(2) { margin-right: 22px; }
+
+  .other-weather-details > li figure { 
+    width: 17px;
+    margin-right: 5px; 
+  }
+
+  .other-weather-details > li:nth-child(2) figure { width: 19px; }
+
+  .other-weather-details > li img {
+    width: inherit;
+    background-position: center;
+    background-size: auto;
+  }
+
+  .other-weather-details > li span{ font-size: 13px; }
+
+  /*----- Live cameras starts here -----*/
+
+  .live-cameras .wrapper { padding: 248px 0 78px; }
+
+  .cities { 
+    -webkit-box-pack: center; 
+    -ms-flex-pack: center; 
+    justify-content: center; 
+  }  
+
+  /*----- News posts starts here -----*/
+
+  .post:not(:last-child) { margin-right: 0; }
+  .post-date { font-size: 19px; }
+  .post-headline,
+  .post-description { font-size: 12px; }
+  .post-headline { font-weight: 600; }
+
+  /*----- feature-analysis-photo starts here -----*/
+
+  .feature-analysis-photos-section .wrapper { padding: 60px 0 51px; }
+
+  .headline { 
+    margin-bottom: 16px;
+    font-size: 30px; 
+  }
+  
+  .feature-analysis-photos > li:not(:last-child) { margin-right: 0; }
+  .feature-item .right-arrow { margin-right: 13px; }
+
+  .feature-headline {
+    margin-bottom: 18px;
+    font-size: 11px;
+  }
+
+  .feature-description {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .gallery-item {
+    width: 88px;
+    margin-bottom: 7px;
+  }
+
+  .gallery-item:not(:nth-child(3)):not(:nth-child(6)):not(:nth-child(9)) { margin-right: 7px; }
+
+  /* Footer starts here
+  ========================================================================== */
+
+  footer .wrapper { padding: 43px 0px 52px; }
+  .email-form { padding-right: 0; }
+  .mail-and-icons { margin-bottom: 0; }
+
+  .icon-link {
+    width: 33px;
+    height: 33px;
+    background-size: 16px;
+  }
+
+  .pintrest { background-size: 14px; }
+
+  .copy-right-text { 
+    font-size: 12px; 
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  
+}
+
+@media screen and (max-width: 320px) {
+  .city { width: 100%; }
+} 
 
 /* ==========================================================================
   Media Queries ends
