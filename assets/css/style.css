@@ -800,6 +800,109 @@ footer .wrapper { padding: 47px 0px 62px; }
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap; 
   }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  /*----- Header starts here -----*/
+
+  header .wrapper { 
+    padding: 43px 0 47px;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; 
+  }
+
+  .logoImage { 
+    width: 54px; 
+    margin-right: 12px;
+  }
+
+  .logoText h1 { font-size: 13px; }
+  .logoText span { font-size: 8px; }
+
+  .navbar {
+    margin-top: 40px;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+  .hide-navbar { display: none; }
+
+  .menu {
+    width: 100%;
+    border-radius: 8px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #262936;
+  }
+
+  .menu-item {
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .menu-item:not(:last-child) { border-bottom: 1px solid #353844; }
+  .menu-link.active { border-color: transparent; }
+
+  .menu-link { 
+    font-size: 12px;
+    font-weight: 300; 
+  }
+
+  .burger { 
+    padding: 19px 17px;
+    border: 2px solid var(--button-color);
+    border-radius: 50%;
+    display: block; 
+    position: absolute;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  .line {
+    width: 10px;
+    height: 2px;
+    border-radius: 50px;
+    margin-bottom: 1px;
+    background: var(--button-color);
+    text-indent: -9999px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  /* Home page main starts here
+  ========================================================================== */
+
+  .weather-report { width: 70%; }
+  .post { width: 100%; }
+
+  .feature-analysis-photos { 
+    -webkit-box-pack: center; 
+    -ms-flex-pack: center; 
+    justify-content: center; 
+  }
+
+  /* Footer starts here
+  ========================================================================== */
+
+  .mail-and-icons { 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column; 
+  }
+  
+  .mail-and-icons .email-form { margin-bottom: 25px; }
+  .footer-icons .icon:first-child { margin-left: 0; }
 
 }
 
