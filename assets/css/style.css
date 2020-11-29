@@ -298,3 +298,54 @@ header .wrapper { padding: 47px 0; }
 /* ==========================================================================
   Header styling ends
  ========================================================================== */
+
+/* ==========================================================================
+  Home page Main styling starts
+  ========================================================================== */
+  
+/*----- Banner starts here -----*/
+
+.home-main .banner {
+  width: 100%;
+  padding: 66px 0 207px;
+  position: relative;
+  background: url("../images/banner.png");
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-inputs {
+  padding: 5px;
+  border-radius: 50px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:row;
+  flex-direction:row;
+  background-color: var(--primery-bg-color);
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--primery-bg-color);
+  color: var(--headline-text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.input-field:focus { outline: none; }
+/* ==========================================================================
+  Home page Main styling ends
+  ========================================================================== */
+
+/* ==========================================================================
+  Footer styling starts
+  ========================================================================== */
+/* ==========================================================================
+  Footer styling ends
+  ========================================================================== */
