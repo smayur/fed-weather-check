@@ -666,6 +666,30 @@ header .wrapper { padding: 47px 0; }
 /* ==========================================================================
   Footer styling starts
   ========================================================================== */
+
+footer { 
+  width: 100%;
+  background-color: var(--secondary-bg-color);
+}
+
+footer .wrapper { padding: 47px 0px 62px; }
+
+.mail-and-icons { 
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+}
+
+.email-form { 
+  padding-right: 14px;
+  -webkit-box-flex: 2; 
+  -ms-flex: 2; 
+  flex: 2; 
+}
+
+.subscribe { padding: 0px 17px; }
+
 /* ==========================================================================
   Footer styling ends
   ========================================================================== */
