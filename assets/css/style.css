@@ -783,6 +783,26 @@ footer .wrapper { padding: 47px 0px 62px; }
 
 }
 
+@media screen and (max-width: 995px) {
+
+  /* Home page main starts here
+  ========================================================================== */
+  .wrapper { width: 92%; }
+  
+  /*----- Header starts here -----*/
+  .menu-item { margin-left: 0px; }
+
+  /*----- Weather report starts here -----*/
+  .weather-report { width: 50%; }
+  
+  /*----- News posts starts here -----*/
+  .news-posts { 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap; 
+  }
+
+}
+
 /* ==========================================================================
   Media Queries ends
   ========================================================================== */
