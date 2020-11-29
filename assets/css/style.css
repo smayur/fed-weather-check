@@ -902,6 +902,10 @@ footer .wrapper { padding: 47px 0px 62px; }
     transition:  all .3s ease;
   }
 
+  /* Photos page main starts here
+  ========================================================================== */
+  .from:hover a{ color: var(--button-color); }
+
   /* Footer starts here
   ========================================================================== */
   .facebook:hover { background-image: url(../images/facebook-hover.png); }
@@ -927,6 +931,13 @@ footer .wrapper { padding: 47px 0px 62px; }
   .news-posts { 
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap; 
+  }
+
+  /* Photos page main starts here
+  ========================================================================== */
+  .card {
+    height: auto; 
+    margin-bottom: 26px;
   }
 
 }
