@@ -161,7 +161,7 @@ sub { bottom: -.25em; }
   common styling starts
  ========================================================================== */
 
- :root {
+:root {
   --primery-bg-color : #1e202b;
   --secondary-bg-color : #262936;
   --headline-text-color : #fff;
@@ -207,3 +207,94 @@ a { text-decoration: none; }
 }
 
 .headline::first-letter { text-transform: capitalize; }
+
+/* ==========================================================================
+  Header styling starts
+ ========================================================================== */
+
+header { 
+  width: 100%;
+  background-color: var(--primery-bg-color);
+}
+
+header .wrapper,
+.logo,
+.menu { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+}
+
+header .wrapper { padding: 47px 0; }
+
+.logo { 
+  -webkit-box-flex: 1; 
+  -ms-flex: 1; 
+  flex: 1; 
+}
+
+.navbar { 
+  -webkit-box-flex: 3; 
+  -ms-flex: 3; 
+  flex: 3; 
+}
+
+/*----- Logo starts here -----*/
+
+.logoImage { 
+  width: 60px;
+  margin-right: 13px;
+}
+
+.logoImage img {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.logoText h1 {
+  color: var(--headline-text-color);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.logoText h1::first-letter { text-transform: capitalize; }
+
+.logoText span {
+  color: var(--info-text-color);
+  font-size: 9px;
+}
+
+/*----- Burger starts here -----*/
+
+.burger { display: none; }
+
+/*----- Navbar starts here -----*/
+
+.menu { float: right; }
+.menu-item { margin-left: 11px; }
+
+.menu-item:not(:nth-child(3)),
+.menu-item:nth-child(3)::first-letter { text-transform: capitalize; }
+
+.menu-link { 
+  padding: 5px 23px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  color: var(--headline-text-color); 
+  font-size: 13px;
+  font-weight: 400;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.menu-link.active { 
+  border-color: var(--button-color);
+  color: var(--button-color); 
+}
+
+/* ==========================================================================
+  Header styling ends
+ ========================================================================== */
