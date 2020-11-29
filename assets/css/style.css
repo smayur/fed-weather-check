@@ -742,3 +742,47 @@ footer .wrapper { padding: 47px 0px 62px; }
 /* ==========================================================================
   Footer styling ends
   ========================================================================== */
+
+/* ==========================================================================
+  Media Queries starts
+  ========================================================================== */
+
+@media only screen and (min-width: 767px) {
+
+  /* Header starts here
+  ========================================================================== */
+  .menu-link:hover { color: var(--button-color); }  
+
+  /* Home page main starts here
+  ========================================================================== */
+  .btn:hover {
+    background: var(--headline-text-color);
+    color:var(--button-color);
+  }
+
+  /*----- feature-analysis-photo starts here -----*/
+
+  .feature-headline:hover,
+  .analyssis-info:hover { color: var(--button-color); }
+
+  .gallery-item .photo-wrapper:hover  img{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition:  all .3s ease;
+    -o-transition:  all .3s ease;
+    transition:  all .3s ease;
+  }
+
+  /* Footer starts here
+  ========================================================================== */
+  .facebook:hover { background-image: url(../images/facebook-hover.png); }
+  .twitter:hover { background-image: url(../images/twitter-hover.png); }
+  .google-plus:hover { background-image: url(../images/google-plus-symbol-hover.png); }
+  .pintrest:hover { background-image: url(../images/pinterest-hover.png); }
+
+}
+
+/* ==========================================================================
+  Media Queries ends
+  ========================================================================== */
