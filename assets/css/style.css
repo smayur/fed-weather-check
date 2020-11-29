@@ -704,6 +704,89 @@ header .wrapper { padding: 47px 0; }
   background-size: auto;
 }
 
+/*----- Photo cards starts here -----*/
+
+.photo-cards {
+  padding: 66px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards { width: 48.69%; }
+.cards:first-child { margin-right: 2.5%; }
+
+.card {
+  width: 100%;
+  height: 179px;
+  border-radius: 10px;
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--secondary-bg-color);
+}
+
+.photo-container,
+.card-text { width: 50%;}
+
+.photo-container {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: left center/cover no-repeat;
+  text-indent: -9999px;
+}
+
+.cards:first-child .card:first-child .photo-container { background-image: url(../images/photo-1.jpg); }
+.cards:first-child .card:nth-child(2) .photo-container { background-image: url(../images/photo-2.jpg); }
+.cards:first-child .card:nth-child(3) .photo-container { background-image: url(../images/photo-3.jpg); }
+.cards:first-child .card:nth-child(4) .photo-container { background-image: url(../images/photo-4.jpg); }
+.cards:first-child .card:last-child .photo-container { background-image: url(../images/photo-5.jpg); }
+.cards:last-child .card:first-child .photo-container { background-image: url(../images/photo-4.jpg); }
+.cards:last-child .card:nth-child(2) .photo-container { background-image: url(../images/photo-7.jpg); }
+.cards:last-child .card:nth-child(3) .photo-container { background-image: url(../images/photo-8.jpg); }
+.cards:last-child .card:nth-child(4) .photo-container { background-image: url(../images/photo-9.jpg); }
+.cards:last-child .card:last-child .photo-container { background-image: url(../images/photo-10.jpg); }
+.card-text { padding: 19px 18px; }
+
+.card-title::first-letter,
+.card-decsription::first-letter { text-transform: capitalize; }
+
+.card-title {
+  margin-bottom: 10px;
+  color: var(--headline-text-color);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-decsription {
+  margin-bottom: 11px;
+  color: var(--info-text-color);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon-star { text-indent: -9999px; }
+
+.icon-star::before {
+  content: '\f005';
+  float: left;
+  color: var(--button-color);
+  font-size: 13px;
+  font-family:"Font Awesome 5 Free";
+  font-weight: 900;
+  text-indent: 0;
+}
+
+.icon-star:last-child::before { color: var(--primery-bg-color); }
+
 /* ==========================================================================
   Photos page Main styling ends
   ========================================================================== */
