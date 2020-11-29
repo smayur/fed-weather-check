@@ -505,6 +505,56 @@ header .wrapper { padding: 47px 0; }
 
 .uppercase-word { text-transform: uppercase; }
 
+/*----- News section starts here -----*/
+
+.news {
+  width: 100%;
+  background-color: var(--secondary-bg-color);
+}
+
+.news .wrapper { padding: 65px 0 60px; }
+
+.news-posts { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+}
+
+.post { 
+  width: calc(342px - 4px); 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex;
+}
+
+.post:not(:last-child) { margin-right: 30px; }
+
+.post-date { 
+  margin: 3px 36px 0 0;
+  color: var(--button-color);
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.post-headline::first-letter,
+.post-description::first-letter,
+.capital-letter { text-transform: capitalize; }
+
+.post-headline,
+.post-description { font-size: 13px; }
+
+.post-headline {
+  margin-bottom: 18px;
+  color: var(--headline-text-color);
+  font-weight: 500;
+}
+
+.post-description {
+  margin-bottom: 5px;
+  color: var(--info-text-color);
+  line-height: 1.6;
+}
+
 
 /* ==========================================================================
   Home page Main styling ends
