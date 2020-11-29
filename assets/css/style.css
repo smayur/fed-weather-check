@@ -633,6 +633,32 @@ header .wrapper { padding: 47px 0; }
   -o-transition: .3s ease;
   transition: .3s ease;
 }
+
+/*----- photos starts here -----*/
+
+.photos-headline { 
+  margin-bottom: 24px;
+  text-transform: capitalize; 
+}
+
+.gallery-item {
+  width: 106px;
+  margin-bottom: 10px;
+  float: left;
+  cursor: pointer;
+}
+
+.gallery-item:not(:nth-child(3)):not(:nth-child(6)):not(:nth-child(9)) { margin-right: 10px; }
+
+.photo-wrapper,
+.photo-wrapper img { width: 100%; }
+
+.photo-wrapper img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* ==========================================================================
   Home page Main styling ends
   ========================================================================== */
