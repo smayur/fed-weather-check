@@ -1178,6 +1178,40 @@ footer .wrapper { padding: 47px 0px 62px; }
 
   .gallery-item:not(:nth-child(3)):not(:nth-child(6)):not(:nth-child(9)) { margin-right: 7px; }
 
+  /* Photos page main starts here
+  ========================================================================== */
+
+  /*----- Breadcrums starts here -----*/
+
+  .photos-main .wrapper { padding: 10px 0; }
+
+  .breadcrums {
+    padding: 18px 25px;
+    font-size: 11px;
+    font-weight: 300;
+  }
+
+  .to::before {
+    padding: 0 5px;
+    margin: 0 11px 0 9px;
+    background-size: 11px;
+  }
+
+  .photo-cards { padding: 61px 0 50px; }
+  .card-text { padding: 17px 14px 12px 17px; }
+
+  .card-title {
+    margin-bottom: 9px;
+    font-size: 14px; 
+  }
+
+  .card-decsription {
+    font-size: 12px;
+    line-height: 1.5; 
+  }
+
+  .icon-star:before { font-size: 11px; }
+
   /* Footer starts here
   ========================================================================== */
 
