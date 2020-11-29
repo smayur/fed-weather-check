@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /*------------------------------------------------------------------
   [Table of contents]
@@ -155,3 +156,54 @@ sub { bottom: -.25em; }
   font-style: normal;
   font-weight: bold;
 }
+
+/* ==========================================================================
+  common styling starts
+ ========================================================================== */
+
+ :root {
+  --primery-bg-color : #1e202b;
+  --secondary-bg-color : #262936;
+  --headline-text-color : #fff;
+  --info-text-color : #bfbfbf;
+  --button-color : #009ad8;
+}
+
+*,
+*::after,
+*::before { 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
+body { font-family: 'Roboto', sans-serif; }
+ul { list-style: none; }
+a { text-decoration: none; }
+
+.wrapper {
+  max-width: 1349px;
+  width: 79.3%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 35px;
+  border: 2px solid var(--button-color);
+  border-radius: 50px;
+  background:var(--button-color);
+  color: var(--headline-text-color);
+  font-size: 13px;
+  text-transform: capitalize;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.headline {
+  margin-bottom: 19px;
+  color: var(--headline-text-color);
+  font-size: 34px;
+  font-weight: 300;
+}
+
+.headline::first-letter { text-transform: capitalize; }
