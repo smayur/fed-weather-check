@@ -436,6 +436,76 @@ header .wrapper { padding: 47px 0; }
 
 .wind-direction { text-transform: capitalize; }
 
+/*----- Live Cameras starts here -----*/
+
+.live-cameras {
+  width: 100%;
+  background: var(--primery-bg-color);
+}
+
+.live-cameras .wrapper { padding: 238px 0 77px; }
+
+.cities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.city { 
+  width: calc(249px - 3px); 
+  margin-bottom: 19px;
+  position: relative;
+}
+
+.city figure { margin-bottom: 18px; }
+
+.city figure img {
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.city figure::before {
+  content: '';
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  z-index: 1;
+  top: 28%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-image: url('../images/play-button.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.city-name {
+  margin-bottom: 9px;
+  color: var(--headline-text-color);
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.city-date-time {
+  color: var(--info-text-color);
+  font-size: 10px;
+}
+
+.uppercase-word { text-transform: uppercase; }
+
+
 /* ==========================================================================
   Home page Main styling ends
   ========================================================================== */
