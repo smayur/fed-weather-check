@@ -555,6 +555,63 @@ header .wrapper { padding: 47px 0; }
   line-height: 1.6;
 }
 
+/* feature-analysis-photos starts here
+  ========================================================================== */
+  
+/*----- Feature starts here -----*/
+
+.feature-analysis-photos-section {
+  width: 100%;
+  background-color: var(--primery-bg-color);
+}
+
+.feature-analysis-photos-section .wrapper { padding: 65px 0; }
+
+.feature-analysis-photos { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.feature-analysis-photos > li { 
+  width: calc(344px - 4px);
+  margin-bottom: 5px;
+}
+
+.feature-analysis-photos > li:not(:last-child) { margin-right: 24px; }
+.features .headline { margin-bottom: 17px; }
+
+.feature-item {
+  margin-bottom: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature-item .right-arrow { margin-right: 10px; }
+
+.feature-headline::first-letter,
+.feature-description::first-letter { text-transform: capitalize; }
+
+.feature-headline {
+  margin: 3px 0 18px 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.feature-description {
+  color: var(--info-text-color);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
 
 /* ==========================================================================
   Home page Main styling ends
