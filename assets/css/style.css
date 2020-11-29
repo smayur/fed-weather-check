@@ -612,7 +612,27 @@ header .wrapper { padding: 47px 0; }
   line-height: 1.6;
 }
 
+/*----- Analyssi starts here -----*/
 
+.analyssis-item { 
+  padding: 10px 0 9px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.analyssis-item:not(:last-child) { border-bottom: 1px solid #353844; }
+.analyssis-item .right-arrow { margin-right: 7px; } 
+.analyssis-info::first-letter { text-transform: capitalize; }
+
+.analyssis-info {
+  margin-top: 1px;
+  color: var(--info-text-color);
+  font-size: 13px;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
 /* ==========================================================================
   Home page Main styling ends
   ========================================================================== */
