@@ -662,6 +662,51 @@ header .wrapper { padding: 47px 0; }
 /* ==========================================================================
   Home page Main styling ends
   ========================================================================== */
+/* ==========================================================================
+  Photos page Main styling starts
+  ========================================================================== */
+
+.photos-main .banner {
+  width: 100%;
+  background-color: var(--primery-bg-color);
+}
+
+/*----- breadcrums starts here -----*/
+
+.breadcrums {
+  padding: 20px 28px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--secondary-bg-color);
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.from a{ 
+  color: var(--info-text-color); 
+  -webkit-transition: all .3s ease; 
+  -o-transition: all .3s ease; 
+  transition: all .3s ease;
+}
+
+.to { color: var(--headline-text-color); }
+
+.to::before {
+  content: '';
+  padding: 0 6px;
+  margin: 0 12px 0 9px;
+  background-image: url('../images/arrow-gray.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+/* ==========================================================================
+  Photos page Main styling ends
+  ========================================================================== */
 
 /* ==========================================================================
   Footer styling starts
