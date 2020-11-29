@@ -339,6 +339,103 @@ header .wrapper { padding: 47px 0; }
 }
 
 .input-field:focus { outline: none; }
+
+/*----- Weather report starts here -----*/
+
+.error-container { padding-bottom: 10px; }
+
+.message {
+  color: #ffffff;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.weather-report {
+  width: 40%;
+  border-radius: 10px;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #323544;
+}
+
+.report-header {
+  padding: 10px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #2d303d;
+  color: var(--info-text-color);
+}
+
+.report-header span { 
+  font-size: 13px;
+  text-transform: capitalize; 
+}
+
+.report-details { padding: 35px 20px 28px; }
+
+.report-city {
+  margin-bottom: 13px;
+  color: var(--info-text-color);
+  font-weight: 500;
+  text-transform: capitalize; 
+}
+
+.temprature-details,
+.other-weather-details,
+.other-weather-details > li { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+}
+
+.temprature-details { 
+  margin-bottom: 13px; 
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.temrature {
+  margin-right: 35px;
+  color: var(--headline-text-color);
+  font-size: 82px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.temparture-icon figure,
+.temparture-icon figure img {
+  width: 86px;
+  margin-top: 10px;
+}
+
+.temparture-icon figure img {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.other-weather-details > li { margin-right: 22px; }
+.other-weather-details > li figure { margin-right: 5px; }
+
+.other-weather-details > li span { 
+  margin-top: 2px;
+  font-size: 14px;
+  color: var(--info-text-color);
+}
+
+.wind-direction { text-transform: capitalize; }
+
 /* ==========================================================================
   Home page Main styling ends
   ========================================================================== */
