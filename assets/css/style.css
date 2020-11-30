@@ -1236,6 +1236,12 @@ footer .wrapper {
   .email-form { padding-right: 0; }
   .mail-and-icons { margin-bottom: 0; }
 
+  .email-response {
+    padding: 0;
+    top: 18px;
+    font-size: 12px;
+  }
+
   .icon-link {
     width: 33px;
     height: 33px;
