@@ -802,13 +802,28 @@ footer {
   background-color: var(--secondary-bg-color);
 }
 
-footer .wrapper { padding: 47px 0px 62px; }
+footer .wrapper { 
+  padding: 47px 0px 62px; 
+  position: relative;
+}
 
 .mail-and-icons { 
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; 
+}
+
+/*----- Footer mail form starts here -----*/
+
+.email-response {
+  padding: 0 20px;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  color: var(--headline-text-color);
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .email-form { 
