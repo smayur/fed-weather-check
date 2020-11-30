@@ -6,6 +6,10 @@
   var bannerWrapper = document.querySelector('.banner .wrapper');
   var search = document.querySelector('.search');
   var submit = document.querySelector('.find');
+  var emailForm = document.querySelector('.email-form .form-inputs');
+  var email = document.querySelector('.email');
+  var subscribe = document.querySelector('.subscribe');
+  var mailformat = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   var apiKey = "d2eb06a2c87c91643afbe3b983120c8e";
@@ -198,6 +202,40 @@
     getDate();                                   // call function to get current date, Month and day
     fetchWeatherReport();                        // call function to show "Mumbai" result after page load.
     
+  }
+
+  // On click of subscribe button call validateEmail function to validate input value.
+  subscribe.addEventListener('click', function(e) {
+    e.preventDefault();
+    validateEmail();
+  });
+
+  // Function to validate email and call showResponce to show message/error
+  function validateEmail() {
+    if (email.value == '') {
+      showResponce("Please enter email id");
+    } else if(!email.value.match(mailformat)) {
+      showResponce("Please enter valid email id, eg. mayurs@prdxn.com");
+    } else {
+      showResponce("Thanks for subscribe");
+    }
+  }
+
+  // Function to show error/Message
+  function showResponce(responceMessage) {
+    clearMessage();
+    var emailMessage = document.createElement('p');
+    emailMessage.classList.add('email-response');
+    emailMessage.innerText = responceMessage;
+    emailForm.insertBefore(emailMessage, emailForm.firstElementChild);
+  }
+
+  // Function to clear error message if any.
+  function clearMessage() {
+    var isError = document.querySelector('.email-response');
+    if (isError != undefined) {
+      isError.remove();
+    }
   }
 
 })();
