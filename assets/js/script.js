@@ -10,6 +10,10 @@
   var email = document.querySelector('.email');
   var subscribe = document.querySelector('.subscribe');
   var mailformat = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  var modal = document.querySelector('.modal');
+  var imageContainer = document.querySelector('.modal-content li');
+  var Allcard = document.querySelectorAll('.card');
+  var span = document.querySelector('.close');
   var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   var apiKey = "d2eb06a2c87c91643afbe3b983120c8e";
@@ -22,7 +26,12 @@
 
   // Check weather the index page main class 
   // and call that page function
-  if(main.classList.contains('home-main')) indexPageJs();
+  if(main.classList.contains('home-main')) {
+    indexPageJs();
+  } else {
+    photosPageJs();
+  }
+  
 
   function indexPageJs() {
 
@@ -202,6 +211,29 @@
     getDate();                                   // call function to get current date, Month and day
     fetchWeatherReport();                        // call function to show "Mumbai" result after page load.
     
+  }
+
+
+  function photosPageJs() {
+    Allcard.forEach((card) => {
+      card.addEventListener('click', function(e) {
+        modal.classList.toggle('show-modal');
+        var modalImage = document.querySelector('.modal-image');
+        modalImage.src = `./assets/images/photo-${e.target.classList[1].slice(6)}@2x.jpg`;
+      })
+    });
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.classList.toggle('show-modal');
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal || event.target == imageContainer) {
+        modal.classList.toggle('show-modal');
+      }
+    }
   }
 
   // On click of subscribe button call validateEmail function to validate input value.
