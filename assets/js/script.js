@@ -214,9 +214,12 @@
   function validateEmail() {
     if (email.value == '') {
       showResponce("Please enter email id");
+      email.focus();
     } else if(!email.value.match(mailformat)) {
       showResponce("Please enter valid email id, eg. mayurs@prdxn.com");
+      email.focus();
     } else {
+      emailForm.parentElement.reset();           // Reset email form.
       showResponce("Thanks for subscribe");
     }
   }
