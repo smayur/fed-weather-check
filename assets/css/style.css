@@ -199,6 +199,8 @@ a { text-decoration: none; }
   transition: .3s ease;
 }
 
+.btn:focus { outline: none; }
+
 .headline {
   margin-bottom: 19px;
   color: var(--headline-text-color);
